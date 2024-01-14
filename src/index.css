@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Pangram';
+        src: url('./fonts/PPPangramSansRounded-Bold.woff'),
+            url('./fonts/PPPangramSansRounded-Medium.woff'),
+            url('./fonts/PPPangramSansRounded-Medium.woff2'),
+            url('./fonts/PPPangramSansRounded-Semibold.woff');   
+    }
+    body{
+        font-family: 'Pangram';
+    }
+}
+
+.category:hover img{
+    transform: translateY(-10px);
+}
+.category:hover p{
+    color: #2430A0;
+    border-bottom-color: #2430A0;
+}
